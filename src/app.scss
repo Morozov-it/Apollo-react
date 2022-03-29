@@ -1,9 +1,12 @@
-body {
-    width: 100vw;
-    height: 100vh;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
@@ -19,4 +22,47 @@ body {
     max-width: 70rem;
     margin: 0 auto;
     padding: 10px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 0.5rem;
+}
+
+.item {
+    cursor: pointer;
+    border: 1px solid rgb(109, 107, 107);
+    border-radius: 10px;
+    overflow: hidden;
+    & img {
+        display: block;
+        max-width: 100%;
+    }
+    & h4 {
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
+
+.card {
+    display: flex;
+    & .image {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.search {
+    display: flex;
+    margin: 1%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & .input {
+        display: flex;
+        justify-content: center;
+    }
 }
