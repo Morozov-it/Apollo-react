@@ -1,0 +1,10 @@
+
+query {
+    characters {
+        results {
+            id
+            name
+            image
+        }
+    }
+}
